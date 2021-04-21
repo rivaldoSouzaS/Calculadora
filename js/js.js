@@ -40,16 +40,13 @@ function adicionarEventos(lista){
                     campoTexto.disabled = true;
                 }
                 if(this.index ==17){
-                    campoTexto.value = Number.parseFloat();
+                    
+                    campoTexto.value = eval(campoTexto.value);
                 }
             }
             
         });
     }
-}
-
-function verificar(){
-    
 }
 
 function percorrer(string){
@@ -83,9 +80,6 @@ function limparLigar(){
     }
 }
 
-function calcular(expressaoString){
-    return 0;
-}
 
 //importante
 function adicaoCorreta(indice){ 
